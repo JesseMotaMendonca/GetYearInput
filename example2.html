@@ -1,0 +1,12 @@
+<select name="yearpicker" id="yearpicker"></select>
+<script type="text/javascript">
+let startYear = 1800;
+let endYear = new Date().getFullYear();
+let yearPicker = document.getElementById('yearpicker');
+for (let i = endYear; i > startYear; i--) {
+  let option = document.createElement('option');
+  option.value = i;
+  option.innerHTML = i;
+  yearPicker.appendChild(option);
+}
+</script>
